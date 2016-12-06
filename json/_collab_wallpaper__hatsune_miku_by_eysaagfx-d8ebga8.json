@@ -1,0 +1,32 @@
+[{
+  "SourceFile": "images/_collab_wallpaper__hatsune_miku_by_eysaagfx-d8ebga8.png.jpg",
+  "ExifTool": {
+    "ExifToolVersion": 9.74
+  },
+  "File": {
+    "FileName": "_collab_wallpaper__hatsune_miku_by_eysaagfx-d8ebga8.png.jpg",
+    "Directory": "images",
+    "FileSize": "142 kB",
+    "FileModifyDate": "2016:11:28 15:05:01+01:00",
+    "FileAccessDate": "2016:11:28 15:04:59+01:00",
+    "FileInodeChangeDate": "2016:11:28 15:05:01+01:00",
+    "FilePermissions": "rw-r--r--",
+    "FileType": "JPEG",
+    "MIMEType": "image/jpeg",
+    "ImageWidth": 1191,
+    "ImageHeight": 670,
+    "EncodingProcess": "Baseline DCT, Huffman coding",
+    "BitsPerSample": 8,
+    "ColorComponents": 3,
+    "YCbCrSubSampling": "YCbCr4:2:0 (2 2)"
+  },
+  "JFIF": {
+    "JFIFVersion": 1.01,
+    "ResolutionUnit": "cm",
+    "XResolution": 118,
+    "YResolution": 118
+  },
+  "Composite": {
+    "ImageSize": "1191x670"
+  }
+}]
