@@ -1,0 +1,91 @@
+/* Header */
+
+#entete {
+    width: 100%;
+    position: fixed;
+    top:0;
+    bottom: auto;
+    height: 60px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+#entete h1 {
+    float: left;
+    width: 295px;
+    height: 46px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+    color: #168ccc;
+}
+
+#entete a {
+	color: #168ccc;	
+    text-decoration: none;
+    text-align: center;
+}
+
+#entete a:hover {
+    color: #168ccc;
+}
+
+/* Bloc de navigation */
+
+#menu {
+    float: right;
+    width: 65%;
+    height: 100%;
+}
+
+#menu {
+    text-align: center;
+    background-color: #f6f6f6;
+    height: 60px;
+}
+
+#menu ul {
+    display: inline-block;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    list-style-type: none;
+}
+
+#menu li {
+    color: #55514d;
+    float: left;
+    width: 180px;
+    height: 40px;
+    padding: 0px;
+    line-height: 40px;
+    background-color: #f6f6f6;
+    border-right: 1px solid #DCDCDC;
+}
+
+#menu li:last-child {
+    border-right: 0px solid #DCDCDC;
+}
+
+#menu li a:hover {
+    color: #168ccc;
+}
+
+#menu li a:active {
+    color: #168ccc;
+}
+
+#menu li a {
+    display: block;
+    text-decoration: none;
+    color: #55514d;;
+}
+
+.bx-viewport {
+    margin-top: 80px;
+}
+
+#uploadForm {
+    margin-top: 80px;
+}

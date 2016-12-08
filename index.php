@@ -24,6 +24,17 @@
   		<title>Metadonnées</title>
   	</head>
   	<body>
+	<div id="entete">
+		<h1><a href="">Crawler SérieBox</a></h1>
+		<nav id="menu" class="clearfix">
+			<ul>
+				<li><a id="menu_services" href="upload.html">UPLOAD</a></li>
+				<li><a id="menu_domaines" href="/#res">RESULTATS</a></li>
+				<li><a id="menu_contact" href="/#apropos">A PROPOS</a></li>
+				<li><a id="menu_informations" href="/informations">INFORMATIONS</a></li>
+			</ul>
+		</nav>
+	</div>
 	<ul class="bxslider">
 		<?php 
 			$files = glob('medias/images/*.{jpg,png,gif}', GLOB_BRACE);
@@ -32,7 +43,6 @@
 			}
 		?>
 	</ul>
-
 	<div id="bx-pager">
 		<?php 
 		$i = 0;
@@ -43,5 +53,7 @@
 			}
 		?>
 	</div>
+
+	
 </body>
 </html>
