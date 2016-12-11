@@ -59,7 +59,25 @@
         echo " Le fichier ".$json." a été créé.";
 
         $string = file_get_contents("medias/json/".$json);
+
+        echo " Le fichier ".$json." a été créé.";
+
         $value = json_decode($string, true);
+
+        /*var_dump($value[0]['File']['FileName']);
+
+        $value[0]['File']['FileName'] = "TOTO";
+
+
+        $string = json_encode($value, true);
+
+        file_put_contents("medias/json/".$json, $string);
+
+
+        $string = file_get_contents("medias/json/".$json);
+        $value = json_decode($string, true);
+
+        var_dump($value[0]['File']['FileName']);*/
 
         $titre = $value[0]['File']['FileName'];
         $description = $value[0]['EXIF']['ImageDescription'];
@@ -69,7 +87,7 @@
         var_dump($copyright);
     ?>
 
-    <form action="upload.php" method="post">
+    <form action="edit.php" method="post">
         <p>
             <label for="titre">Titre :</label>
             <input type="text" name="titre" value="<?php echo $titre; ?>" id="titre"/>
@@ -82,6 +100,7 @@
             <label for="copyright">Copyright :</label>
             <input type="text" name="copyright" value="<?php echo $copyright; ?>" id="copyright"/>
         </p>
+        <input type="hidden" name="fileToEdit" value="<?php echo $json;?>" />
         <input type="submit" value="Editer metadonnees" name="Editer">
     </form>
 

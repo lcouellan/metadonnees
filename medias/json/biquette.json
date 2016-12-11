@@ -1,15 +1,15 @@
 [{
-  "SourceFile": "images/biquette.jpg",
+  "SourceFile": "medias/images/biquette.jpg",
   "ExifTool": {
     "ExifToolVersion": 9.74
   },
   "File": {
     "FileName": "biquette.jpg",
-    "Directory": "images",
+    "Directory": "medias/images",
     "FileSize": "119 kB",
-    "FileModifyDate": "2016:09:28 15:41:40+02:00",
-    "FileAccessDate": "2016:09:28 15:52:54+02:00",
-    "FileInodeChangeDate": "2016:09:28 15:41:40+02:00",
+    "FileModifyDate": "2016:12:06 18:32:14+01:00",
+    "FileAccessDate": "2016:12:08 20:09:08+01:00",
+    "FileInodeChangeDate": "2016:12:08 20:07:13+01:00",
     "FilePermissions": "rw-r--r--",
     "FileType": "JPEG",
     "MIMEType": "image/jpeg",
