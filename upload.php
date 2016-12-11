@@ -4,10 +4,10 @@
 
     <?php
 
-        /**
+        /*
             Gestion de l'upload
         */
-        $target_dir = "images/";
+        $target_dir = "medias/images/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -50,40 +50,43 @@
             }
         }
 
-        /**
+        /*
             Récupération des métadonnées et création du json
         */
         $json = explode('.',$_FILES["fileToUpload"]["name"]);
         $json = $json[0].".json";
-        exec("exiftool -g -json images/".$_FILES["fileToUpload"]["name"]." > json/".$json);
+        exec("exiftool -g -json ".$target_dir.$_FILES["fileToUpload"]["name"]." > medias/json/".$json);
         echo " Le fichier ".$json." a été créé.";
 
-        $string = file_get_contents("json/".$json);
+        $string = file_get_contents("medias/json/".$json);
         $value = json_decode($string, true);
 
         $titre = $value[0]['File']['FileName'];
         $description = $value[0]['EXIF']['ImageDescription'];
         $copyright = $value[0]['EXIF']['Copyright'];
+        var_dump($titre);
+        var_dump($description);
+        var_dump($copyright);
     ?>
 
     <form action="upload.php" method="post">
         <p>
             <label for="titre">Titre :</label>
-            <input type="text" name="titre" value=<?php echo $titre ; ?> id="titre"/>
+            <input type="text" name="titre" value="<?php echo $titre; ?>" id="titre"/>
         </p>
          <p>
             <label for="description">Description :</label>
-            <input type="textarea" name="description" value=<?php echo $description ; ?> id="description"/>
+            <input type="textarea" name="description" value="<?php echo $description; ?>" id="description"/>
         </p>
          <p>
             <label for="copyright">Copyright :</label>
-            <input type="text" name="copyright" value=<?php echo $copyright ; ?> id="copyright"/>
+            <input type="text" name="copyright" value="<?php echo $copyright; ?>" id="copyright"/>
         </p>
         <input type="submit" value="Editer metadonnees" name="Editer">
     </form>
 
     <?php
-        /**
+        /*
             Modification du json selon les données entrées dans le form
         */
         //exec('exiftool -File:filename='.$_POST['titre'].' -XMP:description='.$_POST['description'].' -IPTC:CopyrightNotice='.$_POST['copyright'].' '.$_POST['fileName']);

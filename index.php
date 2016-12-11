@@ -24,6 +24,41 @@
   		<title>Metadonnées</title>
   	</head>
   	<body>
+	<div id="entete">
+		<h1><a href="/metadonnees">Métadonnées</a></h1>
+		<nav id="menu" class="clearfix">
+			<ul>
+				<li><a id="menu_services" href="/metadonnees/upload.html">UPLOAD</a></li>
+				<li><a id="menu_domaines" href="/metadonnees/#bandeau">IMAGES</a></li>
+				<li><a id="menu_contact" href="/metadonnees/#apropos">A PROPOS</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="description">
+		<h1>Les métadonnées sur les images</h1>
+		<div id="row" class="clearfix">
+			<div class="colonne">
+				<h3>Upload et Stockage</h3>
+				<p>Possibilité d'upload <a href="https://ensweb.users.info.unicaen.fr/devoirs/m2-dnr-umdn3c/images.zip">d'images</a> sur cette application web pour gérer leurs métadonnées</p> 
+				<img src="medias/icones/iconmonstr-picture.png" alt="upload" class="icons"/>
+			</div>
+			<div class="colonne">
+				<h3>Métadonnées</h3>
+				<p>Edition des métadonnées des images précedemment upload avec  <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">Exiftool</a></p>
+				<img src="medias/icones/iconmonstr-pencil.png" alt="metadonnes" class="icons"/>
+			</div>
+			<div class="colonne">
+				<h3>Visualisation</h3>
+				<p>Affichage des images et de leurs métadonnées toujours via <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">Exiftool</a></p>
+				<img src="medias/icones/iconmonstr-monitoring.png" alt="visualisation" class="icons"/>
+			</div>
+		</div>
+	</div>
+	<div id="bandeau">
+		<h3> Banque d'images </h3>
+	</div>
+	<div id="fleche_bas"></div>
+
 	<ul class="bxslider">
 		<?php 
 			$files = glob('medias/images/*.{jpg,png,gif}', GLOB_BRACE);
@@ -32,7 +67,6 @@
 			}
 		?>
 	</ul>
-
 	<div id="bx-pager">
 		<?php 
 		$i = 0;
@@ -43,5 +77,11 @@
 			}
 		?>
 	</div>
-</body>
+
+	<div id="apropos">
+		<h3>A propos</h3>
+		<p>Ce projet à été réalisé par Lénaïc Couellan et Raphaël Erfani dans le cadre d'un projet pédagogique lors du Master 2 DNR2i en novembre 2016.</p>
+		<p>Voir le <a href="https://ensweb.users.info.unicaen.fr/devoirs/m2-dnr-umdn3c/">sujet</a></p>
+	</div>
+	</body>		
 </html>
