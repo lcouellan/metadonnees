@@ -39,7 +39,9 @@
 		<?php 
 			$files = glob('medias/images/*.{jpg,png,gif}', GLOB_BRACE);
 			foreach($files as $file) {
-				echo '<li><img src="'.$file.'" width="800" height="500"/></li>';
+				$img = explode('/',$file);
+				$img = $img[2];
+				echo '<li><a href="display.php?nom='.$img.'"><figure><img src="'.$file.'" width="800" height="500"/></figure></a></li>';
 			}
 		?>
 	</ul>
