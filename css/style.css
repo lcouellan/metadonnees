@@ -1,3 +1,37 @@
+/* Général */
+
+a {
+    color: #242221;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: #168ccc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "spinnaker";
+    color: #242221;
+}
+
+/* Classe enlevant le caractère flottant des blocs */
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* Importation de police */
+
+@font-face {
+    font-family: "spinnaker";
+    src: url('../police/Spinnaker-Regular.ttf');
+}
+
 /* Header */
 
 #entete {
@@ -83,13 +117,130 @@
 }
 
 .bx-viewport {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .bx-wrapper {
     margin-bottom: 100px;
 }
 
+/* Formulaires */
+
 #uploadForm {
     margin-top: 80px;
+}
+
+/* Description */
+
+#description {
+    width: 87%;
+    min-height: 200px;
+    padding-top: 60px;
+    margin-left: 10%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+#description h1 {
+    color: #168ccc;
+    text-align: center;
+    margin-left: -7%;
+    font-size: 35px;
+}
+
+#description .colonne {
+    width: 29%;
+    float: left;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#description .icons {
+    width: 60px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.colonne h3 {
+    color: #279ddd;
+}
+
+/* Bandeau */
+
+#bandeau {
+    margin-top: 20px;
+    background-color: #168ccc;
+    height: 80px;
+    width: 100%;
+}
+
+#bandeau h3 {
+    text-align: center;
+    line-height:80px;
+    color: #f6f6f6;
+    font-size: 30px;
+}
+
+#fleche_bas {
+    margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top:15px solid #168ccc;
+}
+
+/* A propos */
+
+#apropos {
+    width: 100%;
+    min-height: 120px;
+    padding-top: 5px;  
+    margin-top: 20px;
+    background-color: #168ccc;
+    color: #DADADA;
+    text-align: center;
+}
+
+#apropos h3 {
+    font-size: 20px;
+}
+
+#apropos p {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#apropos a {
+    color: #DADADA; 
+    text-decoration: none;
+}
+
+#apropos a:hover {
+    color: #252525;
+}
+
+/* Pour les petits écrans */
+@media screen and (max-width: 900px) {
+
+    #entete h1 {
+        width: 180px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    #menu {
+        float: right;
+        width: 65%;
+        height: 100%;
+    }
+
+    #menu li {
+        width: 110px;
+        font-size: 13px;
+    }
+>>>>>>> 6d4334c45dbd924bed630e3b94c0089b77d13de2
 }

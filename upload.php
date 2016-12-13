@@ -56,10 +56,8 @@
         */
         $json = explode('.',$_FILES["fileToUpload"]["name"]);
         $json = $json[0].".json";
+
         $value = refresh($json);
-
-
-
 
         $title = $value[0]['XMP']['Title'];
         $description = $value[0]['XMP']['Description'];
