@@ -1,17 +1,18 @@
 [{
   "SourceFile": "medias/images/photo8.jpg",
   "ExifTool": {
-    "ExifToolVersion": 9.74
+    "ExifToolVersion": 10.36
   },
   "File": {
     "FileName": "photo8.jpg",
     "Directory": "medias/images",
     "FileSize": "122 kB",
-    "FileModifyDate": "2016:12:06 18:32:19+01:00",
-    "FileAccessDate": "2016:12:13 17:14:01+01:00",
-    "FileInodeChangeDate": "2016:12:08 20:08:18+01:00",
+    "FileModifyDate": "2016:12:14 15:03:26+01:00",
+    "FileAccessDate": "2016:12:14 15:34:46+01:00",
+    "FileInodeChangeDate": "2016:12:14 15:34:11+01:00",
     "FilePermissions": "rw-r--r--",
     "FileType": "JPEG",
+    "FileTypeExtension": "jpg",
     "MIMEType": "image/jpeg",
     "CurrentIPTCDigest": "62a3068d4773833bb6b7ec1527901ad9",
     "ExifByteOrder": "Big-endian (Motorola, MM)",
@@ -98,7 +99,7 @@
     "Software": "Aperture 3.5.1",
     "ModifyDate": "2013:10:07 09:41:17",
     "Artist": "Jessie Eastland",
-    "Copyright": "CC-by-sa",
+    "Copyright": "SALOP",
     "ExifVersion": "0231",
     "DateTimeOriginal": "2013:10:07 09:41:17",
     "CreateDate": "2013:10:07 09:41:17",
@@ -113,29 +114,30 @@
     "GPSLongitude": "115 deg 56' 57.13\""
   },
   "XMP": {
-    "XMPToolkit": "XMP Core 5.4.0",
-    "Subject": ["california","desert","joshua tree"],
-    "Rights": "CC-by-sa",
-    "Description": "Joshua Tree National Park is located in southeastern California. Declared a U.S. National Park in 1994 when the U.S. Congress passed the California Desert Protection Act . It is named for the Joshua tree (Yucca brevifolia) forests native to the park.  \n\nThe park includes parts of two deserts, each an ecosystem whose characteristics are determined primarily by elevation: the higher Mojave Desert and lower Colorado Desert. The Little San Bernardino Mountains run through the southwest edge of the park.",
-    "Creator": "Jessie Eastland",
-    "Title": "California High Desert Summer Sunset",
+    "XMPToolkit": "Image::ExifTool 9.74",
     "Location": "Joshua Tree National Park",
-    "UsageTerms": "http://creativecommons.org/licenses/by-sa/3.0/deed.en",
-    "CreateDate": "2013:10:07 09:41:17",
-    "CreatorTool": "Aperture 3.5.1",
-    "ModifyDate": "2013:10:07 09:41:17",
-    "State": "California",
+    "Creator": "Jessie Eastland",
+    "Description": "CONNARD",
+    "Rights": "CC-by-sa",
+    "Subject": ["california","desert","joshua tree"],
+    "Title": "TEST",
     "Country": "USA",
     "Credit": "Wikimedia Commons",
     "DateCreated": "2013:10:07 21:58:17+02:00",
+    "Headline": "California High Desert Summer Sunset",
     "Source": "http://commons.wikimedia.org/wiki/File:Blue-Joshua_2_-_July-2011.jpg",
-    "Headline": "California High Desert Summer Sunset"
+    "State": "California",
+    "CreateDate": "2013:10:07 09:41:17",
+    "CreatorTool": "Aperture 3.5.1",
+    "ModifyDate": "2013:10:07 09:41:17",
+    "UsageTerms": "http://creativecommons.org/licenses/by-sa/3.0/deed.en"
   },
   "Composite": {
     "DateTimeCreated": "2013:10:07 21:58:17+02:00",
     "GPSLatitude": "33 deg 53' 44.89\" N",
     "GPSLongitude": "115 deg 56' 57.13\" W",
     "GPSPosition": "33 deg 53' 44.89\" N, 115 deg 56' 57.13\" W",
-    "ImageSize": "800x439"
+    "ImageSize": "800x439",
+    "Megapixels": 0.351
   }
 }]

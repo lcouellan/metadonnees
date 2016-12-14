@@ -222,7 +222,13 @@ body {
 #apropos a:hover {
     color: #252525;
 }
-
+#gal-photos figure {
+    width: 15%;
+    display: inline-block;
+}
+#keywords {
+    display: none;
+}
 /* Pour les petits écrans */
 @media screen and (max-width: 900px) {
 
@@ -242,5 +248,4 @@ body {
         width: 110px;
         font-size: 13px;
     }
->>>>>>> 6d4334c45dbd924bed630e3b94c0089b77d13de2
 }

@@ -1,17 +1,18 @@
 [{
   "SourceFile": "medias/images/photo7.jpg",
   "ExifTool": {
-    "ExifToolVersion": 9.74
+    "ExifToolVersion": 10.36
   },
   "File": {
     "FileName": "photo7.jpg",
     "Directory": "medias/images",
     "FileSize": "137 kB",
-    "FileModifyDate": "2016:12:13 18:18:42+01:00",
-    "FileAccessDate": "2016:12:13 18:18:42+01:00",
-    "FileInodeChangeDate": "2016:12:13 18:18:42+01:00",
+    "FileModifyDate": "2016:12:14 15:03:26+01:00",
+    "FileAccessDate": "2016:12:14 15:34:46+01:00",
+    "FileInodeChangeDate": "2016:12:14 15:34:11+01:00",
     "FilePermissions": "rw-r--r--",
     "FileType": "JPEG",
+    "FileTypeExtension": "jpg",
     "MIMEType": "image/jpeg",
     "CurrentIPTCDigest": "c1a2ed92b28b9234e0f8ee554e170c7b",
     "ExifByteOrder": "Big-endian (Motorola, MM)",
@@ -140,6 +141,7 @@
     "GPSLatitude": "38 deg 53' 21.11\" N",
     "GPSLongitude": "77 deg 2' 47.40\" W",
     "GPSPosition": "38 deg 53' 21.11\" N, 77 deg 2' 47.40\" W",
-    "ImageSize": "800x532"
+    "ImageSize": "800x532",
+    "Megapixels": 0.426
   }
 }]
