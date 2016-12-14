@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <body>
-
+<?php include("../fragments/header.html");?>
     <?php
 
         require_once("functions.php");
         /*
             Gestion de l'upload
         */
-        $target_dir = "medias/images/";
+        $target_dir = "/metadonnees/medias/images/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -19,7 +16,7 @@
                 echo "Image - " . $check["mime"] . ". ";
                 $uploadOk = 1;
             } else {
-                echo "Ceci n'est pas une image malotru !";
+                echo "Ceci n'est pas une image !";
                 $uploadOk = 0;
             }
         }
@@ -63,7 +60,7 @@
         $description = $value[0]['XMP']['Description'];
         $author = $value[0]['XMP']['Creator'];
         $location = $value[0]['XMP']['Location'];
-        $copyright = $value[0]['EXIF']['Copyright'];
+        $copyright = $value[0]['XMP']['Rights'];
     ?>
 
     <form action="edit.php" method="post">
@@ -97,7 +94,5 @@
         */
         //exec('exiftool -File:filename='.$_POST['title'].' -XMP:author='.$_POST['author'].' -IPTC:CopyrightNotice='.$_POST['copyright'].' '.$_POST['fileName']);
     ?>
-
-  </body>
+    <?php include("../fragments/footer.html");?>
 </html>
-

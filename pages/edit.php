@@ -1,3 +1,4 @@
+<?php include("../fragments/header.html");?>
 <h1>Avant</h1>
 <?php
 
@@ -17,8 +18,7 @@ echo '<h1>Après : </h1>';
 $img = explode('.',$json);
 $img = $img[0].".jpg";
 
-exec("exiftool -title=".$_POST["title"]." -creator=".$_POST["author"]." -location=".$_POST["location"]." -description=".$_POST["description"]." -copyright=".$_POST["copyright"]." medias/images/".$img);
-
+exec("exiftool -title=".$_POST["title"]." -creator=".$_POST["author"]." -location=".$_POST["location"]." -description=".$_POST["description"]." -Rights=".$_POST["copyright"]." medias/images/".$img);
 
 $value = refresh($json);
 
@@ -31,3 +31,4 @@ echo '<p> Lieu : '.$value[0]['XMP']['Location'].'</p>';
 echo '<p> Description : '.$value[0]['XMP']['Description'].'</p>';
 ?>
 <a href="/metadonnees">Revenir à l'accueil</a>
+<?php include("../fragments/footer.html");?>
