@@ -1,5 +1,5 @@
 <?php include("fragments/header.html");?>
-	<div id="description">
+	<div id="desc">
 		<h1>Les métadonnées sur les images</h1>
 		<div id="row" class="clearfix">
 			<div class="colonne">

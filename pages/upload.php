@@ -5,7 +5,7 @@
         /*
             Gestion de l'upload
         */
-        $target_dir = "/metadonnees/medias/images/";
+        $target_dir = "../medias/images/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -63,7 +63,7 @@
         $copyright = $value[0]['XMP']['Rights'];
     ?>
 
-    <form action="edit.php" method="post">
+    <form action="edit.php" id="formEdit" method="post">
         <p>
             <label for="title">Titre :</label>
             <input type="text" name="title" value="<?php echo $title; ?>" id="title"/>
@@ -82,7 +82,7 @@
         </p>
         <p>
             <label for="description">Description :</label>
-            <input type="textarea" name="description" value="<?php echo $description; ?>" id="description"/>
+            <input type="text" name="description" value="<?php echo $description; ?>" id="description"/>
         </p>
         <input type="hidden" name="fileToEdit" value="<?php echo $json;?>" />
         <input type="submit" value="Editer metadonnees" name="Editer">

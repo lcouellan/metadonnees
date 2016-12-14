@@ -1,5 +1,5 @@
 <?php include("../fragments/header.html");?>
-<h1>Avant</h1>
+<h1 class="titre">Avant</h1>
 <?php
 
 require_once("functions.php");
@@ -18,17 +18,17 @@ echo '<h1>Après : </h1>';
 $img = explode('.',$json);
 $img = $img[0].".jpg";
 
-exec("exiftool -title=".$_POST["title"]." -creator=".$_POST["author"]." -location=".$_POST["location"]." -description=".$_POST["description"]." -Rights=".$_POST["copyright"]." medias/images/".$img);
+exec("exiftool -title=\"".$_POST["title"]."\" -creator=".$_POST["author"]." -location=\"".$_POST["location"]."\" -description=\"".$_POST["description"]."\" -Rights=".$_POST["copyright"]." ../medias/images/".$img);
 
 $value = refresh($json);
 
 //var_dump($value);
 
 echo '<p> Titre : '.$value[0]['XMP']['Title'].'</p>';
-echo '<p> Copyright : '.$value[0]['XMP']['Rights'].'</p>';
 echo '<p> Auteur : '.$value[0]['XMP']['Creator'].'</p>';
 echo '<p> Lieu : '.$value[0]['XMP']['Location'].'</p>';
+echo '<p> Copyright : '.$value[0]['XMP']['Rights'].'</p>';
 echo '<p> Description : '.$value[0]['XMP']['Description'].'</p>';
 ?>
-<a href="/metadonnees">Revenir à l'accueil</a>
+<a href="/M2/metadonnees">Revenir à l'accueil</a>
 <?php include("../fragments/footer.html");?>

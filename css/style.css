@@ -17,6 +17,17 @@ body {
     color: #242221;
 }
 
+.titre {
+    margin-top: 80px;
+}
+
+.telechargement {
+    display: block;
+}
+.telechargement#first {
+    margin-top: 80px;
+}
+
 /* Classe enlevant le caractère flottant des blocs */
 
 .clearfix:after {
@@ -140,10 +151,13 @@ body {
 #uploadForm {
     margin-top: 80px;
 }
+#formEdit {
+    margin-top: 80px;
+}
 
 /* Description */
 
-#description {
+#desc {
     width: 87%;
     min-height: 200px;
     padding-top: 60px;
@@ -152,14 +166,14 @@ body {
     text-align: center;
 }
 
-#description h1 {
+#desc h1 {
     color: #168ccc;
     text-align: center;
     margin-left: -7%;
     font-size: 35px;
 }
 
-#description .colonne {
+#desc .colonne {
     width: 29%;
     float: left;
     text-align: center;
@@ -167,7 +181,7 @@ body {
     padding-right: 10px;
 }
 
-#description .icons {
+#desc .icons {
     width: 60px;
     height: auto;
     padding-top: 10px;
