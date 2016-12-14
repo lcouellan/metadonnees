@@ -39,7 +39,7 @@
 		<div id="row" class="clearfix">
 			<div class="colonne">
 				<h3>Upload et Stockage</h3>
-				<p>Possibilité d'upload <a href="https://ensweb.users.info.unicaen.fr/devoirs/m2-dnr-umdn3c/images.zip">d'images</a> sur cette application web pour gérer leurs métadonnées</p> 
+				<p>Possibilité d'upload <a href="https://ensweb.users.info.unicaen.fr/devoirs/m2-dnr-umdn3c/images.zip">d'images</a> et gestion de leurs métadonnées</p> 
 				<img src="medias/icones/iconmonstr-picture.png" alt="upload" class="icons"/>
 			</div>
 			<div class="colonne">
@@ -65,7 +65,7 @@
 			foreach($files as $file) {
 				$img = explode('/',$file);
 				$img = $img[2];
-				echo '<li><a href="display.php?nom='.$img.'"><figure><img src="'.$file.'" width="800" height="500"/></figure></a></li>';
+				echo '<li><a href="display.php?nom='.$img.'"><figure><img src="'.$file.'" title="'.$img.'" width="800" height="500"/><figcaption>'.$img.'</figcaption></figure></a></li>';
 			}
 		?>
 	</ul>

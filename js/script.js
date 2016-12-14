@@ -3,3 +3,8 @@ $(document).ready(function(){
 		pagerCustom: '#bx-pager'
 	});
 });
+
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true
+});

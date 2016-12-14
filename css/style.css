@@ -42,7 +42,7 @@ body {
     height: 60px;
     background-color: #f6f6f6;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
-    z-index: 2;
+    z-index: 100000;
 }
 
 #entete h1 {
@@ -223,6 +223,12 @@ body {
     color: #252525;
 }
 
+/* Tableau détails */
+
+tbody tr:nth-child(even) {
+   background-color: #EEE;
+}
+
 /* Pour les petits écrans */
 @media screen and (max-width: 900px) {
 
@@ -242,5 +248,4 @@ body {
         width: 110px;
         font-size: 13px;
     }
->>>>>>> 6d4334c45dbd924bed630e3b94c0089b77d13de2
 }
