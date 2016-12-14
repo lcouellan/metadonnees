@@ -1,12 +1,12 @@
 [{
-  "SourceFile": "medias/images/83RttyI.jpg",
+  "SourceFile": "medias/images/244c7b3b04e06161fa39115d8c18b158.jpg",
   "ExifTool": {
     "ExifToolVersion": 10.36
   },
   "File": {
-    "FileName": "83RttyI.jpg",
+    "FileName": "244c7b3b04e06161fa39115d8c18b158.jpg",
     "Directory": "medias/images",
-    "FileSize": "114 kB",
+    "FileSize": "318 kB",
     "FileModifyDate": "2016:12:14 15:03:26+01:00",
     "FileAccessDate": "2016:12:14 15:34:46+01:00",
     "FileInodeChangeDate": "2016:12:14 15:34:11+01:00",
@@ -15,12 +15,12 @@
     "FileTypeExtension": "jpg",
     "MIMEType": "image/jpeg",
     "ExifByteOrder": "Big-endian (Motorola, MM)",
-    "ImageWidth": 1000,
-    "ImageHeight": 559,
-    "EncodingProcess": "Baseline DCT, Huffman coding",
+    "ImageWidth": 1920,
+    "ImageHeight": 1080,
+    "EncodingProcess": "Progressive DCT, Huffman coding",
     "BitsPerSample": 8,
     "ColorComponents": 3,
-    "YCbCrSubSampling": "YCbCr4:2:0 (2 2)"
+    "YCbCrSubSampling": "YCbCr4:4:4 (1 1)"
   },
   "JFIF": {
     "JFIFVersion": 1.01,
@@ -41,7 +41,7 @@
     "Title": "TEST"
   },
   "Composite": {
-    "ImageSize": "1000x559",
-    "Megapixels": 0.559
+    "ImageSize": "1920x1080",
+    "Megapixels": 2.1
   }
 }]

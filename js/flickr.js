@@ -82,7 +82,4 @@ function getQueryParams(qs) {
 
 $(document).ready(function(){
 	makeCorsRequest();
-	$('.bxslider').bxSlider({
-		pagerCustom: '#bx-pager'
-	});
 });

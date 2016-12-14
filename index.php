@@ -11,7 +11,6 @@
 	<link href="lib/Bxslider/jquery.bxslider.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
-    <script src="js/script.js"></script>
     <script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +38,7 @@
 		<div id="row" class="clearfix">
 			<div class="colonne">
 				<h3>Upload et Stockage</h3>
-				<p>Possibilité d'upload <a href="https://ensweb.users.info.unicaen.fr/devoirs/m2-dnr-umdn3c/images.zip">d'images</a> sur cette application web pour gérer leurs métadonnées</p> 
+				<p>Possibilité d'upload <a href="https://ensweb.users.info.unicaen.fr/devoirs/m2-dnr-umdn3c/images.zip">d'images</a> et gestion de leurs métadonnées</p> 
 				<img src="medias/icones/iconmonstr-picture.png" alt="upload" class="icons"/>
 			</div>
 			<div class="colonne">
@@ -65,7 +64,7 @@
 			foreach($files as $file) {
 				$img = explode('/',$file);
 				$img = $img[2];
-				echo '<li><a href="display.php?nom='.$img.'"><figure><img src="'.$file.'" width="800" height="500"/></figure></a></li>';
+				echo '<li><a href="display.php?nom='.$img.'"><figure><img src="'.$file.'" title="'.$img.'" width="800" height="500"/><figcaption>'.$img.'</figcaption></figure></a></li>';
 			}
 		?>
 	</ul>
@@ -85,5 +84,11 @@
 		<p>Ce projet à été réalisé par Lénaïc Couellan et Raphaël Erfani dans le cadre d'un projet pédagogique lors du Master 2 DNR2i en novembre 2016.</p>
 		<p>Voir le <a href="https://ensweb.users.info.unicaen.fr/devoirs/m2-dnr-umdn3c/">sujet</a></p>
 	</div>
-	</body>		
+	</body>	
+	<script>
+	$('.bxslider').bxSlider({
+		pagerCustom: '#bx-pager',
+    	mode: 'fade'
+	});
+	</script>	
 </html>
