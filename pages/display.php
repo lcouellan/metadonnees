@@ -5,7 +5,7 @@ $json = explode('.',$_GET["nom"]);
 $json = $json[0].".json";
 $lienJson = "<a class='telechargement' href='/M2/metadonnees/medias/json/".$json."' download='".$json."'>Télécharger les métadonnées de l'image</a>";
 $resultat = shell_exec("exiftool -h ../medias/images/".$_GET["nom"]);
-$image = '<figure><img src="/M2/metadonnees/medias/images/'.$_GET["nom"].'"></figure>';
+$image = '<figure id="imgdetails"><img src="/M2/metadonnees/medias/images/'.$_GET["nom"].'"></figure>';
 
 // inclusion du squelette
 require_once("../fragments/squelette_meta.html");

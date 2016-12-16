@@ -1,5 +1,5 @@
 <?php include("../fragments/header.html");?>
-<h1 class="titre">Avant</h1>
+<h1 class="titre">Avant modification : </h1>
 <?php
 
 require_once("functions.php");
@@ -13,7 +13,7 @@ echo '<p> Lieu : '.$value[0]['XMP']['Location'].'</p>';
 echo '<p> Copyright : '.$value[0]['XMP']['Rights'].'</p>';
 echo '<p> Description : '.$value[0]['XMP']['Description'].'</p>';
 
-echo '<h1>Après : </h1>';
+echo '<h1>Après modification : </h1>';
 
 $img = explode('.',$json);
 $img = $img[0].".jpg";
@@ -30,5 +30,4 @@ echo '<p> Lieu : '.$value[0]['XMP']['Location'].'</p>';
 echo '<p> Copyright : '.$value[0]['XMP']['Rights'].'</p>';
 echo '<p> Description : '.$value[0]['XMP']['Description'].'</p>';
 ?>
-<a href="/M2/metadonnees">Revenir à l'accueil</a>
 <?php include("../fragments/footer.html");?>

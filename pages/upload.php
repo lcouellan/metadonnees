@@ -64,6 +64,7 @@
     ?>
 
     <form action="edit.php" id="formEdit" method="post">
+        <h3> Editez les metadonnées suivantes comme vous le souhaitez ! </h3>
         <p>
             <label for="title">Titre :</label>
             <input type="text" name="title" value="<?php echo $title; ?>" id="title"/>

@@ -17,6 +17,10 @@ body {
     color: #242221;
 }
 
+#retourAccueil {
+    margin: 10px;
+}
+
 .titre {
     margin-top: 80px;
 }
@@ -26,6 +30,18 @@ body {
 }
 .telechargement#first {
     margin-top: 80px;
+}
+
+#imgdetails {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.blue {
+    text-align: center;
+    color: #168ccc;
 }
 
 /* Classe enlevant le caractère flottant des blocs */
@@ -150,9 +166,11 @@ body {
 
 #uploadForm {
     margin-top: 80px;
+    margin-left: 10px;
 }
 #formEdit {
     margin-top: 80px;
+    margin-left: 10px;
 }
 
 /* Description */
@@ -247,18 +265,36 @@ body {
 #apropos a:hover {
     color: #252525;
 }
+
 #gal-photos figure {
     width: 15%;
     display: inline-block;
+    text-align: center;
 }
+#gal-photos {
+    display: block;
+    text-align: center;
+}
+
 #keywords {
     display: none;
+}
+
+#flickr {
+    text-align: center;
 }
 
 /* Tableau détails */
 
 tbody tr:nth-child(even) {
    background-color: #EEE;
+}
+
+table {
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 /* Pour les petits écrans */

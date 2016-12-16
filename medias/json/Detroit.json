@@ -1,0 +1,76 @@
+[{
+  "SourceFile": "../medias/images/Detroit.jpg",
+  "ExifTool": {
+    "ExifToolVersion": 9.74
+  },
+  "File": {
+    "FileName": "Detroit.jpg",
+    "Directory": "../medias/images",
+    "FileSize": "134 kB",
+    "FileModifyDate": "2016:12:14 17:59:25+01:00",
+    "FileAccessDate": "2016:12:16 11:28:32+01:00",
+    "FileInodeChangeDate": "2016:12:14 17:59:25+01:00",
+    "FilePermissions": "rw-r--r--",
+    "FileType": "JPEG",
+    "MIMEType": "image/jpeg",
+    "ExifByteOrder": "Big-endian (Motorola, MM)",
+    "CurrentIPTCDigest": "45855ea6e591fdf0314c3cc4176e855c",
+    "ImageWidth": 800,
+    "ImageHeight": 533,
+    "EncodingProcess": "Baseline DCT, Huffman coding",
+    "BitsPerSample": 8,
+    "ColorComponents": 3,
+    "YCbCrSubSampling": "YCbCr4:2:0 (2 2)"
+  },
+  "EXIF": {
+    "Orientation": "Horizontal (normal)",
+    "XResolution": 72,
+    "YResolution": 72,
+    "ResolutionUnit": "inches",
+    "YCbCrPositioning": "Centered",
+    "ExifVersion": "0231",
+    "ComponentsConfiguration": "Y, Cb, Cr, -",
+    "FlashpixVersion": "0100",
+    "ColorSpace": "sRGB",
+    "ExifImageWidth": 800,
+    "ExifImageHeight": 533
+  },
+  "XMP": {
+    "XMPToolkit": "XMP Core 5.1.2",
+    "Title": "Abandoned Packard Automobile Factory, Detroit",
+    "Creator": "Albert Duce",
+    "Subject": ["abandoned","detroit","factory","michigan"],
+    "Description": "Western part of the abandoned Packard Automotive Plant in Detroit, Michigan.",
+    "Rights": "CC-by-sa",
+    "Headline": "Abandoned Packard Automobile Factory, Detroit",
+    "Country": "USA",
+    "City": "Detroit",
+    "DateCreated": "2009:10:07 16:04:52+02:00",
+    "Source": "http://commons.wikimedia.org/wiki/File:Abandoned_Packard_Automobile_Factory_Detroit_200.jpg",
+    "Credit": "Wikimedia Commons",
+    "State": "Michigan",
+    "UsageTerms": "http://creativecommons.org/licenses/by-sa/3.0/deed.en"
+  },
+  "IPTC": {
+    "CodedCharacterSet": "UTF8",
+    "ApplicationRecordVersion": 2,
+    "By-line": "Albert Duce",
+    "Headline": "Abandoned Packard Automobile Factory, Detroit",
+    "Source": "http://commons.wikimedia.org/wiki/File:Abandoned_Packard_Automobile_Factory_Detroit_200.jpg",
+    "Caption-Abstract": "Western part of the abandoned Packard Automotive Plant in Detroit, Michigan.",
+    "Credit": "Wikimedia Commons",
+    "DateCreated": "2009:10:07",
+    "CopyrightNotice": "CC-by-sa",
+    "Keywords": ["abandoned","detroit","factory","michigan"],
+    "Province-State": "Michigan",
+    "TimeCreated": "16:04:52+02:00",
+    "ObjectName": "Abandoned Packard Automobile Factory, Detroit",
+    "City": "Detroit",
+    "Country-PrimaryLocationName": "USA"
+  },
+  "Composite": {
+    "DateTimeCreated": "2009:10:07 16:04:52+02:00",
+    "DateTimeOriginal": "2009:10:07 16:04:52+02:00",
+    "ImageSize": "800x533"
+  }
+}]
